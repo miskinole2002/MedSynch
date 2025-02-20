@@ -42,7 +42,7 @@ function Register_medecin (){
     
             headers:{"Content-Type":"application/json"},
     
-            body:JSON.stringify(values),
+            body:JSON.stringify(values), 
         });
         const data= await response.json()
         console.log('reponse:',data)
