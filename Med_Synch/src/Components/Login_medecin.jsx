@@ -47,18 +47,18 @@ function Login_medecin (){
     return (
     <>
 
-<p className="h3"> Connection </p>
+<p className="h3 mb-3"> Connection </p>
 <form action="" onSubmit={handleSubmit(submit)} >
         
 
-<div className="input-group flex-nowrap">
+<div className="input-group flex-nowrap mb-3">
   <span className="input-group-text" id="addon-wrapping">Email</span>
   <input type="text" className="form-control" aria-label="Email" aria-describedby="addon-wrapping"  id="Email" name="Email" {...register("Email")}/>
 </div> 
 
 
 
-<div className="input-group flex-nowrap">
+<div className="input-group flex-nowrap mb-3">
   <span className="input-group-text" id="addon-wrapping">Mot de passe</span>
   <input type="text" className="form-control"  aria-label="Mot_de_passe" aria-describedby="addon-wrapping" id="Mot_de_passe" name="Mot_de_passe" {...register("Mot_de_passe")} />
 </div>
@@ -66,7 +66,7 @@ function Login_medecin (){
 
 
 
-<button type="submit" className="btn btn-primary">Inscrire</button>
+<button type="submit" className="btn btn-primary mb-3">Inscrire</button>
 
 </form>
     
