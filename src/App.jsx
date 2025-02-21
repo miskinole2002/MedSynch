@@ -15,8 +15,8 @@ function App() {
     <>
     <Header/>
       {/* < Register_medecin/> */}
-      {/* < Login_medecin/> */}
-      <Register_patient/>
+      < Login_medecin/>
+      {/* <Register_patient/> */}
       {/* < Login_patient/> */}
     <Footer/>
     </>
