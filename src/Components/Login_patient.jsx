@@ -45,7 +45,7 @@ function Login_patient (){
     return (
     <>
 
-<p className="h3 mb-3"> Connection </p>
+<p className="h3 mb-3"> Connection Patient </p>
 <form action="" onSubmit={handleSubmit(submit)} >
         
 

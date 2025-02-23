@@ -44,10 +44,13 @@ function Login_medecin (){
         alert (data.message.nom+" "+ "bienvenue dans votre profil ")
       };
 
-    return (
-    <>
+    return (<>
 
-<p className="h3 mb-3"> Connection </p>
+    <p className="h3 mb-3"> Connection Medecin </p>
+
+
+   
+
 <form action="" onSubmit={handleSubmit(submit)} >
         
 
@@ -66,12 +69,13 @@ function Login_medecin (){
 
 
 
-<button type="submit" className="btn btn-primary mb-3">Inscrire</button>
+<button type="submit" className="btn btn-primary mb-3">Connection</button>
 
 </form>
-    
-    
     </>)
+    
+
+   
 }
 
 

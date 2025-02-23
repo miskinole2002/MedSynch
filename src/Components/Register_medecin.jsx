@@ -2,6 +2,8 @@ import {useForm} from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Api from "../contexts/request";
+import styles from "../assets/styles/Connexion.module.scss"
+
 import { useContext } from "react";
 
 
@@ -51,49 +53,49 @@ function Register_medecin (){
 
     return (
     <>
+  <div className={`${styles.menuConnexion} border p-20`}>  
 
-<p className="h3 mb-3"> Enregistrement </p>
+<p className="h3 mb-3"> Enregistrement Medecin </p>
 <form action="" onSubmit={handleSubmit(submit)} >
-        
-<div className="input-group flex-nowrap mb-3">
-  <span className="input-group-text mb-3" id="addon-wrapping" >Nom</span>
-  <input type="text" className="form-control"  aria-label="Nom" aria-describedby="addon-wrapping" id="Nom" name="Nom" {...register("Nom")} />
-</div>
+    <div className="input-group flex-nowrap mb-3">
+      <span className="input-group-text mb-3" id="addon-wrapping" >Nom</span>
+      <input type="text" className="form-control"  aria-label="Nom" aria-describedby="addon-wrapping" id="Nom" name="Nom" {...register("Nom")} />
+    </div>
 
- <div className="input-group flex-nowrap mb-3">
-  <span className="input-group-text" id="addon-wrapping">Prenom</span>
-  <input type="text" className="form-control"aria-label="Prenom" aria-describedby="addon-wrapping"  id="Prenom" name="Prenom" {...register("Prenom")} />
-</div>
+    <div className="input-group flex-nowrap mb-3">
+      <span className="input-group-text" id="addon-wrapping">Prenom</span>
+      <input type="text" className="form-control"aria-label="Prenom" aria-describedby="addon-wrapping"  id="Prenom" name="Prenom" {...register("Prenom")} />
+    </div>
 
-<div className="input-group flex-nowrap mb-3">
-  <span className="input-group-text" id="addon-wrapping">Mot de passe</span>
-  <input type="text" className="form-control"  aria-label="Mot_de_passe" aria-describedby="addon-wrapping" id="Mot_de_passe" name="Mot_de_passe" {...register("Mot_de_passe")} />
-</div>
+    <div className="input-group flex-nowrap mb-3">
+      <span className="input-group-text" id="addon-wrapping">Mot de passe</span>
+      <input type="text" className="form-control"  aria-label="Mot_de_passe" aria-describedby="addon-wrapping" id="Mot_de_passe" name="Mot_de_passe" {...register("Mot_de_passe")} />
+    </div>
 
-<div className="input-group flex-nowrap mb-3">
-  <span className="input-group-text" id="addon-wrapping">Nom hopital</span>
-  <input type="text" className="form-control"  aria-label="Nom_Hopital" aria-describedby="addon-wrapping" id="Nom_Hopital" name="Nom_Hopital" {...register("Nom_Hopital")} />
-</div>
+    <div className="input-group flex-nowrap mb-3">
+      <span className="input-group-text" id="addon-wrapping">Nom hopital</span>
+      <input type="text" className="form-control"  aria-label="Nom_Hopital" aria-describedby="addon-wrapping" id="Nom_Hopital" name="Nom_Hopital" {...register("Nom_Hopital")} />
+    </div>
 
-<div className="input-group flex-nowrap mb-3">
-  <span className="input-group-text" id="addon-wrapping">Telephone</span>
-  <input type="text" className="form-control"  aria-label="Tel" aria-describedby="addon-wrapping" id="Tel" name="Tel" {...register("Tel")} />
-</div>
+    <div className="input-group flex-nowrap mb-3">
+      <span className="input-group-text" id="addon-wrapping">Telephone</span>
+      <input type="text" className="form-control"  aria-label="Tel" aria-describedby="addon-wrapping" id="Tel" name="Tel" {...register("Tel")} />
+    </div>
 
-<div className="input-group flex-nowrap mb-3">
-  <span className="input-group-text" id="addon-wrapping">Matricule</span>
-  <input type="text" className="form-control"  aria-label="Matricule" aria-describedby="addon-wrapping" id="Matricule" name="Matricule" {...register("Matricule")} />
-</div>       
+    <div className="input-group flex-nowrap mb-3">
+      <span className="input-group-text" id="addon-wrapping">Matricule</span>
+      <input type="text" className="form-control"  aria-label="Matricule" aria-describedby="addon-wrapping" id="Matricule" name="Matricule" {...register("Matricule")} />
+    </div>       
 
-<div className="input-group flex-nowrap mb-3">
-  <span className="input-group-text" id="addon-wrapping">Email</span>
-  <input type="text" className="form-control" aria-label="Email" aria-describedby="addon-wrapping"  id="Email" name="Email" {...register("Email")}/>
-</div> 
+    <div className="input-group flex-nowrap mb-3">
+      <span className="input-group-text" id="addon-wrapping">Email</span>
+      <input type="text" className="form-control" aria-label="Email" aria-describedby="addon-wrapping"  id="Email" name="Email" {...register("Email")}/>
+    </div> 
 
-<button type="submit" className="btn btn-primary mb-3">Inscrire</button>
-
+    <button type="submit" className="btn btn-primary mb-3">Inscrire</button>
 </form>
     
+  </div> 
     
     </>)
 }
