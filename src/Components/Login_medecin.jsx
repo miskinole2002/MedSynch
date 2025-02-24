@@ -3,6 +3,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Api from "../contexts/request";
 import { useContext } from "react";
+import styles from "../assets/styles/Connexion.module.scss"
 
 
 
@@ -46,6 +47,9 @@ function Login_medecin (){
 
     return (<>
 
+    <ImageAccueil/>
+  <div className={`${styles.menuConnexion} border p-20 text_accueil m-10 p-10`} style={{ maxHeight: "500px", overflowY: "auto" }}>  
+
     <p className="h3 mb-3"> Connection Medecin </p>
 
 
@@ -72,11 +76,20 @@ function Login_medecin (){
 <button type="submit" className="btn btn-primary mb-3">Connection</button>
 
 </form>
+</div>
     </>)
     
 
    
 }
 
+
+export const ImageAccueil = () => {
+   
+  return (
+    <div  className="image_accueil" >
+      <img src="src/assets/images/Baner_img.png" alt="" />
+    </div>
+  );}
 
 export default Login_medecin

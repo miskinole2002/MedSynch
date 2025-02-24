@@ -31,9 +31,20 @@ const Header=()=> {
 
             <Link className="nav-link active" to="/Login_patient">connexion Patient</Link>
           </li>
-        </ul>
-       
-      
+
+  </ul>
+  <div className="dropdown">
+  <a className="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    plus...
+  </a>
+
+  <ul className="dropdown-menu">
+    <li>< Link className="dropdown-item" to="/Register_patient">inscrition patient </Link></li>
+    <li><Link className="dropdown-item" to="/Register_medecin">inscription medecin</Link></li>
+    <li><Link className="dropdown-item" href="#">ajouter...</Link></li>
+  </ul>
+</div>
+
 
 
 </div>
