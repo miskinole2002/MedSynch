@@ -90,7 +90,7 @@ export const ImageAccueil = () => {
    
   return (
     <div  className="image_accueil" >
-      <img src="src/assets/images/Baner_img.png" alt="" />
+      <img src="public/images/Baner_img.png" alt="" />
     </div>
   );}
 
