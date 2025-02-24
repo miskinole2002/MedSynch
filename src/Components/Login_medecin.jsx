@@ -48,7 +48,7 @@ function Login_medecin (){
     return (<>
 
 <div  className="image_accueil" >
-       <img src="src/assets/images/Baner_img.png" alt="" />
+       <img src="public/images/Baner_img.png" alt="" />
 </div>
   <div className={`${styles.menuConnexion} border p-20 text_accueil m-10 p-10`} style={{ maxHeight: "500px", overflowY: "auto" }}>  
 
