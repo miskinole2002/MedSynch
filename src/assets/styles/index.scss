@@ -1,43 +1,45 @@
-@use "./partials/variables";
-@use "./partials/base";
-@use "./partials/flex";
 @use "./partials/utils";
-@use "./partials/keyframes";
 @use "./partials/theme";
 
+
 body {
-  font-size: 150px;
-  line-height: 1.6;
-}
-
-text_accueil {
-  float: right;
-  color: var(--text-color);
-  max-width: 50%;
-
-  h1 {
-    font-weight: normal;
-    letter-spacing: 1px;
-    font-size: 30px;
-    line-height: 1.4;
+    font-size: 15px;
+    line-height: 1.9;
   }
 
-  p {
-    margin-bottom: 25px;
-    color: var(--gray-1);
-    overflow-wrap: break-word;
-    word-break: break-word;
+.text_accueil {
+    float: right;
+    color: var(--text-color);
+    max-width: 50%;
+  
+    h1 {
+      font-weight: normal;
+      letter-spacing: 1px;
+      font-size: 30px;
+      line-height: 1.4;
+    }
+  
+    p {
+      margin-bottom: 25px;
+      color: var(--gray-1);
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
   }
-}
 
-.image_accueil {
-  float: left;
-  width: 50%;
-  max-width: 500px;
-}
+  .image_accueil {
+    float: right;
+    width: 50%;
+    max-width: 500px;
+  }
 
-.image_accueil {
-  float: right;
-  width: 50%;
-  max-width: 500px;
-}
+
+  .medecin {
+    background: #0066ff;
+    color: white;
+  }
+  
+  .patient {
+    background: #a3cc00;
+    color: white;
+  }
